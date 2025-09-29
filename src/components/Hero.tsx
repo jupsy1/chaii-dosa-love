@@ -23,7 +23,7 @@ export const Hero = () => {
             <span className="block text-3xl md:text-4xl mt-2 text-muted-foreground">Cuisine</span>
           </h1>
           
-          <p className="text-xl text-muted-foreground mb-8 leading-relaxed">
+          <p className="text-xl text-foreground/90 mb-8 leading-relaxed font-medium">
             Bold spices, fresh ingredients, and traditional recipes crafted with love. 
             Experience the authentic flavors of India at Chaii Dosa Cafe.
           </p>
