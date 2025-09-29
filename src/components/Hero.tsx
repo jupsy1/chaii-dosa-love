@@ -9,7 +9,7 @@ export const Hero = () => {
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
         style={{ backgroundImage: `url(${heroImage})` }}
       >
-        <div className="absolute inset-0 bg-gradient-to-r from-background/85 via-background/40 to-background/60"></div>
+        <div className="absolute inset-0 bg-gradient-to-r from-background/70 via-background/20 to-background/30"></div>
       </div>
       
       <div className="relative max-w-content mx-auto px-4 py-section">
