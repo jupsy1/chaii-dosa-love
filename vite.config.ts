@@ -12,8 +12,17 @@ export default defineConfig({
       "@": path.resolve(__dirname, "./src"),
     },
   },
+  build: {
+    rollupOptions: {
+      onwarn: () => {},
+    },
+  },
   esbuild: {
     jsx: 'automatic',
-    jsxImportSource: 'react'
+    jsxImportSource: 'react',
+    target: 'es2020'
+  },
+  define: {
+    global: 'globalThis',
   },
 });
