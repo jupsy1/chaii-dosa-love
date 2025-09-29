@@ -25,7 +25,12 @@ export const Header = () => {
               <Phone className="w-4 h-4" />
               <span>07311 522700</span>
             </div>
-            <Button variant="secondary" size="sm" className="bg-turmeric text-foreground hover:bg-accent/90">
+            <Button 
+              variant="secondary" 
+              size="sm" 
+              className="bg-turmeric text-foreground hover:bg-accent/90"
+              onClick={() => window.open('tel:07311522700')}
+            >
               Order Now
             </Button>
           </div>

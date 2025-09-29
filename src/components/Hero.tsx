@@ -29,10 +29,22 @@ export const Hero = () => {
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 mb-12">
-            <Button size="lg" className="bg-gradient-hero hover:shadow-glow transition-smooth text-lg px-8 py-4">
+            <Button 
+              size="lg" 
+              className="bg-gradient-hero hover:shadow-glow transition-smooth text-lg px-8 py-4"
+              onClick={() => {
+                const menuSection = document.getElementById('menu');
+                menuSection?.scrollIntoView({ behavior: 'smooth' });
+              }}
+            >
               View Our Menu
             </Button>
-            <Button variant="outline" size="lg" className="text-lg px-8 py-4 border-2 border-primary hover:bg-primary hover:text-primary-foreground">
+            <Button 
+              variant="outline" 
+              size="lg" 
+              className="text-lg px-8 py-4 border-2 border-primary hover:bg-primary hover:text-primary-foreground"
+              onClick={() => window.open('https://wa.me/447311522700?text=Hi! I would like to place a takeaway order from Chaii Dosa Cafe.', '_blank')}
+            >
               Order Takeaway
             </Button>
           </div>
