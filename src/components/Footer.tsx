@@ -1,4 +1,4 @@
-import { MapPin, Phone, Clock, Heart } from "lucide-react";
+import { MapPin, Phone, Clock, Heart, Facebook, Zap } from "lucide-react";
 
 export const Footer = () => {
   return (
@@ -47,10 +47,10 @@ export const Footer = () => {
             </div>
           </div>
 
-          {/* Services */}
+          {/* Services & Social Media */}
           <div>
-            <h4 className="text-lg font-semibold mb-4">Our Services</h4>
-            <ul className="space-y-2 text-sm">
+            <h4 className="text-lg font-semibold mb-4">Connect With Us</h4>
+            <ul className="space-y-2 text-sm mb-6">
               <li className="flex items-center space-x-2">
                 <span className="w-2 h-2 bg-turmeric rounded-full"></span>
                 <span>Dine-In Service</span>
@@ -72,6 +72,28 @@ export const Footer = () => {
                 <span>Family Friendly</span>
               </li>
             </ul>
+            
+            <div>
+              <h5 className="font-semibold mb-3">Follow Us</h5>
+              <div className="flex space-x-4">
+                <a 
+                  href="https://www.facebook.com/profile.php?id=61580341651258" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="w-10 h-10 bg-primary-foreground/20 rounded-full flex items-center justify-center hover:bg-turmeric hover:text-accent-foreground transition-smooth"
+                >
+                  <Facebook className="w-5 h-5" />
+                </a>
+                <a 
+                  href="https://www.tiktok.com/@chaiidosa?lang=en-GB" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="w-10 h-10 bg-primary-foreground/20 rounded-full flex items-center justify-center hover:bg-turmeric hover:text-accent-foreground transition-smooth"
+                >
+                  <Zap className="w-5 h-5" />
+                </a>
+              </div>
+            </div>
           </div>
         </div>
 

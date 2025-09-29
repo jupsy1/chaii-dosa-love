@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { MapPin, Phone, Clock, Car, Utensils } from "lucide-react";
+import { MapPin, Phone, Clock, Car, Utensils, Facebook, Zap } from "lucide-react";
 
 const hours = [
   { day: "Monday", time: "Closed", closed: true },
@@ -145,6 +145,30 @@ export const Contact = () => {
                     <MapPin className="w-4 h-4 mr-2" />
                     Find Us on Maps
                   </Button>
+                </div>
+                
+                <div className="mt-6 p-4 bg-primary/5 rounded-lg">
+                  <h5 className="font-semibold text-primary mb-3">Follow Us Online</h5>
+                  <div className="flex space-x-3">
+                    <a 
+                      href="https://www.facebook.com/profile.php?id=61580341651258" 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                      className="flex-1 flex items-center justify-center py-2 bg-primary/10 rounded-lg hover:bg-primary/20 transition-smooth text-sm font-medium"
+                    >
+                      <Facebook className="w-4 h-4 mr-2" />
+                      Facebook
+                    </a>
+                    <a 
+                      href="https://www.tiktok.com/@chaiidosa?lang=en-GB" 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                      className="flex-1 flex items-center justify-center py-2 bg-primary/10 rounded-lg hover:bg-primary/20 transition-smooth text-sm font-medium"
+                    >
+                      <Zap className="w-4 h-4 mr-2" />
+                      TikTok
+                    </a>
+                  </div>
                 </div>
               </CardContent>
             </Card>
