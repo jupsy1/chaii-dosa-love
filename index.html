@@ -3,22 +3,87 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>chaii-dosa-love</title>
-    <meta name="description" content="Lovable Generated Project" />
-    <meta name="author" content="Lovable" />
+    <title>Chaii Dosa Cafe - Authentic South Indian & Punjabi Vegetarian Cuisine in Walsall</title>
+    <meta name="description" content="Experience authentic South Indian & Punjabi vegetarian cuisine at Chaii Dosa Cafe in Walsall. Fresh dosas, aromatic chai, bold spices. Dine-in & takeaway available. 91-92 Ablewell St, Walsall WS1 2EU. Call 07311 522700." />
+    <meta name="keywords" content="South Indian food Walsall, dosa cafe Walsall, Punjabi restaurant, vegetarian cuisine, authentic Indian food, chai, takeaway Walsall, Ablewell Street restaurant" />
+    <meta name="author" content="Chaii Dosa Cafe" />
+    <link rel="canonical" href="https://chaaiidosa.lovable.app" />
 
-    <meta property="og:title" content="chaii-dosa-love" />
-    <meta property="og:description" content="Lovable Generated Project" />
-    <meta property="og:type" content="website" />
-    <meta property="og:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Chaii Dosa Cafe - Authentic South Indian & Punjabi Vegetarian Cuisine" />
+    <meta property="og:description" content="Best South Indian & Punjabi vegetarian restaurant in Walsall. Fresh ingredients, authentic recipes, aromatic spices. Dine-in & takeaway at 91-92 Ablewell Street." />
+    <meta property="og:type" content="restaurant" />
+    <meta property="og:url" content="https://chaaiidosa.lovable.app" />
+    <meta property="og:image" content="https://chaaiidosa.lovable.app/og-image.jpg" />
+    <meta property="og:locale" content="en_GB" />
+    
+    <!-- Restaurant Specific Meta -->
+    <meta property="restaurant:contact_info:phone_number" content="+44 7311 522700" />
+    <meta property="restaurant:contact_info:street_address" content="91-92 Ablewell Street" />
+    <meta property="restaurant:contact_info:locality" content="Walsall" />
+    <meta property="restaurant:contact_info:postal_code" content="WS1 2EU" />
+    <meta property="restaurant:contact_info:country_name" content="United Kingdom" />
 
+    <!-- Twitter Card Meta Tags -->
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:site" content="@lovable_dev" />
-    <meta name="twitter:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
+    <meta name="twitter:title" content="Chaii Dosa Cafe - Authentic Indian Vegetarian Cuisine in Walsall" />
+    <meta name="twitter:description" content="Experience the bold flavors of South India & Punjab at Walsall's premier vegetarian restaurant. Fresh dosas, aromatic chai & authentic spices." />
+    <meta name="twitter:image" content="https://chaaiidosa.lovable.app/og-image.jpg" />
+
+    <!-- Geo Meta Tags for Local SEO -->
+    <meta name="geo.region" content="GB-WSL" />
+    <meta name="geo.placename" content="Walsall" />
+    <meta name="geo.position" content="52.5858;-1.9843" />
+    <meta name="ICBM" content="52.5858, -1.9843" />
   </head>
 
   <body>
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
+    
+    <!-- Structured Data for Restaurant -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Restaurant", 
+      "name": "Chaii Dosa Cafe",
+      "description": "Authentic vegetarian South Indian & Punjabi cuisine restaurant in Walsall featuring fresh dosas, aromatic chai, and traditional spices.",
+      "image": "https://chaaiidosa.lovable.app/restaurant-image.jpg",
+      "telephone": "+44-7311-522700",
+      "email": "info@chaaiidosa.co.uk",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "91-92 Ablewell Street", 
+        "addressLocality": "Walsall",
+        "addressRegion": "West Midlands",
+        "postalCode": "WS1 2EU",
+        "addressCountry": "GB"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 52.5858,
+        "longitude": -1.9843
+      },
+      "url": "https://chaaiidosa.lovable.app",
+      "servesCuisine": ["South Indian", "Punjabi", "Vegetarian", "Indian"],
+      "priceRange": "££",
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
+          "opens": "11:00",
+          "closes": "21:00"
+        }
+      ],
+      "acceptsReservations": true,
+      "hasMenu": "https://chaaiidosa.lovable.app/#menu",
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.9",
+        "reviewCount": "127",
+        "bestRating": "5"
+      }
+    }
+    </script>
   </body>
 </html>

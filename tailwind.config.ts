@@ -22,6 +22,7 @@ export default {
         primary: {
           DEFAULT: "hsl(var(--primary))",
           foreground: "hsl(var(--primary-foreground))",
+          glow: "hsl(var(--primary-glow))",
         },
         secondary: {
           DEFAULT: "hsl(var(--secondary))",
@@ -47,6 +48,14 @@ export default {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
+        curry: {
+          orange: "hsl(var(--curry-orange))",
+          red: "hsl(var(--curry-red))",
+        },
+        turmeric: "hsl(var(--turmeric))",
+        mint: "hsl(var(--mint-green))",
+        cardamom: "hsl(var(--cardamom))",
+        cinnamon: "hsl(var(--cinnamon))",
         sidebar: {
           DEFAULT: "hsl(var(--sidebar-background))",
           foreground: "hsl(var(--sidebar-foreground))",
@@ -62,6 +71,26 @@ export default {
         lg: "var(--radius)",
         md: "calc(var(--radius) - 2px)",
         sm: "calc(var(--radius) - 4px)",
+      },
+      backgroundImage: {
+        'gradient-hero': 'var(--gradient-hero)',
+        'gradient-card': 'var(--gradient-card)', 
+        'gradient-accent': 'var(--gradient-accent)',
+      },
+      boxShadow: {
+        'warm': 'var(--shadow-warm)',
+        'card': 'var(--shadow-card)',
+        'glow': 'var(--shadow-glow)',
+      },
+      maxWidth: {
+        'content': 'var(--content-width)',
+      },
+      spacing: {
+        'section': 'var(--section-padding)',
+      },
+      transitionTimingFunction: {
+        'smooth': 'var(--transition-smooth)',
+        'bounce': 'var(--transition-bounce)',
       },
       keyframes: {
         "accordion-down": {
@@ -80,10 +109,37 @@ export default {
             height: "0",
           },
         },
+        "float": {
+          "0%, 100%": {
+            transform: "translateY(0px)",
+          },
+          "50%": {
+            transform: "translateY(-10px)",
+          },
+        },
+        "spice": {
+          "0%": {
+            transform: "rotate(0deg) scale(1)",
+          },
+          "25%": {
+            transform: "rotate(90deg) scale(1.1)",
+          },
+          "50%": {
+            transform: "rotate(180deg) scale(1)",
+          },
+          "75%": {
+            transform: "rotate(270deg) scale(1.1)",
+          },
+          "100%": {
+            transform: "rotate(360deg) scale(1)",
+          },
+        },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
+        "float": "float 3s ease-in-out infinite",
+        "spice": "spice 8s linear infinite",
       },
     },
   },
