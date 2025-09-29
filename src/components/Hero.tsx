@@ -9,21 +9,21 @@ export const Hero = () => {
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
         style={{ backgroundImage: `url(${heroImage})` }}
       >
-        <div className="absolute inset-0 bg-gradient-to-r from-background/95 via-background/70 to-transparent"></div>
+        <div className="absolute inset-0 bg-gradient-to-r from-background/85 via-background/40 to-background/60"></div>
       </div>
       
       <div className="relative max-w-content mx-auto px-4 py-section">
         <div className="max-w-2xl">
-          <h1 className="text-5xl md:text-7xl font-bold mb-6 text-foreground">
+          <h1 className="text-5xl md:text-7xl font-bold mb-6 text-foreground drop-shadow-lg">
             Authentic
-            <span className="text-primary block animate-float">
+            <span className="text-primary drop-shadow-md block animate-float">
               South Indian
             </span>
-            <span className="text-curry-red">& Punjabi</span>
-            <span className="block text-3xl md:text-4xl mt-2 text-muted-foreground">Cuisine</span>
+            <span className="text-curry-red drop-shadow-md">& Punjabi</span>
+            <span className="block text-3xl md:text-4xl mt-2 text-foreground/90 drop-shadow-md">Cuisine</span>
           </h1>
           
-          <p className="text-xl text-foreground/90 mb-8 leading-relaxed font-medium">
+          <p className="text-xl text-foreground/95 mb-8 leading-relaxed font-medium drop-shadow-sm">
             Bold spices, fresh ingredients, and traditional recipes crafted with love. 
             Experience the authentic flavors of India at Chaii Dosa Cafe.
           </p>
